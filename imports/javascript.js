@@ -30,7 +30,7 @@ const actions = {
     state.audioSong = document.querySelector('#audioSong');
     state.audioMouth = document.querySelector('#audioMouth');
     // 0.01 for ts
-    state.audioMouth.volume = 0.02;
+    state.audioMouth.volume = 0.08;
     actions.togglePlay(state.audioSong);
     actions.togglePlay(state.audioMouth);
     if (!state.audioMouth.paused) {
@@ -39,7 +39,7 @@ const actions = {
   },
   animateSingingHead() {
     state.analyser.getByteFrequencyData(state.dataArray);
-    const greaterThanZeroIfSound = state.dataArray[3];
+    const greaterThanZeroIfSound = state.dataArray[7];
     if (greaterThanZeroIfSound > 0 && !state.audioSong.paused) {
       actions.toggleMouth(true);
     } else {
