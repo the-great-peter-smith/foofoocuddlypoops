@@ -1,0 +1,87 @@
+/* Setup */
+
+body {
+  margin: 0;
+}
+
+/* Nav */
+
+.nav {
+  border-color: #cbcbcb #4e474e #4e474e #cbcbcb;
+  border-style: solid;
+  border-width: 5px;
+  background: #adadad;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__item,
+.nav__item--selected {
+  color: blue;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.nav__item:hover {
+  text-decoration: underline;
+}
+
+.nav__item--selected {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Page main */
+
+.page-main {
+  padding: 40px;
+  position: relative;
+}
+
+/* Page floating head */
+
+.page-floating-head {
+
+}
+
+.page-floating-head__play-pause {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.page-floating-head__play-pause-icon {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+}
+
+.page-floating-head__play-pause-icon:hover {
+  opacity: 0.7;
+}
+
+.page-floating-head__play-pause-text {
+  margin-left: 20px;
+}
+
+.page-floating-head__hidden-audio {
+  display: none;
+}
+
+
+/* Backgrounds */
+.background--clouds {
+  background-image: url('../images/clouds.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}

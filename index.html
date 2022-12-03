@@ -5,8 +5,40 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./imports/styles.css">
+  <script src="./imports/javascript.js"></script>
+  <script defer>
+    init.pageFloatingHead();
+  </script>
 </head>
-<body>
-  <h1>This is my website</h1>
+<body class="background--clouds">
+  <div class="nav">
+    <a class="nav__item--selected">
+      floating singing head
+    </a>
+    <a class="nav__item">
+      curated memes
+    </a>
+    <a class="nav__item">
+      select musics
+    </a>
+    <a class="nav__item">
+      charcues
+    </a>
+  </div>
+  <div class="page-main page-floating-head">
+    <div class="page-floating-head__play-pause">
+      <img onclick="actions.playMusic()" class="page-floating-head__play-pause-icon" src="./images/play-pause.png" />
+      <p class="page-floating-head__play-pause-text">
+        <-- click to hear Zuko sing a song
+      </p>
+    </div>
+  </div>
+  <audio id="audioSong" class="page-floating-head__hidden-audio">
+    <source src="audio/a-song-about-love.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="audioMouth" class="page-floating-head__hidden-audio">
+    <source src="audio/a-song-about-love__mouth-audio.mp3" type="audio/mpeg">
+  </audio>
 </body>
 </html>
