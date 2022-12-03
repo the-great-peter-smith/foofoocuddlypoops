@@ -76,6 +76,44 @@ body {
   display: none;
 }
 
+.page-floating-head__head {
+  pointer-events: none;
+  transform: scale(3);
+  position: fixed;
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: -20px;
+}
+
+.page-floating-head__head-image {
+  width: 100px;
+}
+
+.page-floating-head__mouth-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-floating-head__mouth-image {
+  opacity: 0;
+  transform: scaleY(0);
+  height: 18px;
+  width: 32px;
+  margin-top: 11px;
+  margin-left: 3px;
+  transition: opacity .08s, transform .08s;
+}
+
+.page-floating-head__mouth-image--shown {
+  opacity: 1;
+  transform: scaleY(1);
+}
 
 /* Backgrounds */
 .background--clouds {

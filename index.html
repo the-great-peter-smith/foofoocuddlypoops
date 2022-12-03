@@ -7,12 +7,9 @@
   <title>Document</title>
   <link rel="stylesheet" href="./imports/styles.css">
   <script src="./imports/javascript.js"></script>
-  <script defer>
-    init.pageFloatingHead();
-  </script>
 </head>
 <body class="background--clouds">
-  <div class="nav">
+  <!-- <div class="nav">
     <a class="nav__item--selected">
       floating singing head
     </a>
@@ -25,12 +22,18 @@
     <a class="nav__item">
       charcues
     </a>
-  </div>
+  </div> -->
   <div class="page-main page-floating-head">
+    <div id="head" class="page-floating-head__head">
+      <img class="page-floating-head__head-image" src="./images/head.png" />
+      <div class="page-floating-head__mouth-container">
+        <img id="headMouth" class="page-floating-head__mouth-image" src="./images/mouth-open.png" />
+      </div>
+    </div>
     <div class="page-floating-head__play-pause">
       <img onclick="actions.playMusic()" class="page-floating-head__play-pause-icon" src="./images/play-pause.png" />
       <p class="page-floating-head__play-pause-text">
-        <-- click to hear Zuko sing a song
+        <-- click to hear Ang sing a song
       </p>
     </div>
   </div>
@@ -40,5 +43,16 @@
   <audio id="audioMouth" class="page-floating-head__hidden-audio">
     <source src="audio/a-song-about-love__mouth-audio.mp3" type="audio/mpeg">
   </audio>
+  <!--
+    <audio id="audioSong" class="page-floating-head__hidden-audio">
+      <source src="audio/doestoevsky-song.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audioMouth" class="page-floating-head__hidden-audio">
+      <source src="audio/doestoevsky-mouth.mp3" type="audio/mpeg">
+    </audio>  
+  -->
+  <script>
+    init.pageFloatingHead();
+  </script>
 </body>
 </html>
