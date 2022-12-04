@@ -173,7 +173,7 @@ body {
 .background--becky {
   background-image: url('../images/memes/becky.png');
   background-repeat: repeat;
-  background-size: 100px;
+  background-size: 200px;
   height: 100vh;
 }
 
